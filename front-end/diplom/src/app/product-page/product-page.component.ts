@@ -23,23 +23,14 @@ export class ProductPageComponent {
       const productId = +params['id'];
       this.productService.getProductById(productId).subscribe(product => {
         this.product = product;
+        console.log(this.product);
       });
-      console.log(this.product);
-      
     });
+    console.log(this.cartService.getCart());
   }
 
-  addToCart(product: any, count : any){
+  addToCart(product: any, count : number = 1){
     this.cartService.addToCart(product, count)
-    console.log(this.cartService.cart);
   }
 
 }
-
-
-
-
-
-
-
-

@@ -11,6 +11,7 @@ import { AdminComponent } from './admin/admin.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HeaderComponent } from './header/header.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

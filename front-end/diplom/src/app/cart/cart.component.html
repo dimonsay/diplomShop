@@ -1,3 +1,14 @@
-<div class="cart" *ngFor="let product of cart">
-    1
-</div>
+<div>
+    <div *ngIf="cart.length > 0">
+      <div *ngFor="let item of cart">
+        <div *ngFor="let product of [item.product]">
+          {{ product.name }}
+        </div>
+        {{ item.count }}
+      </div>
+    </div>
+    <div *ngIf="cart.length === 0">
+      Загрузка данных...
+    </div>
+  </div>
+  
