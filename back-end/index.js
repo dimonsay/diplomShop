@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 
 
-
+//allow cors
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', '*');
@@ -33,6 +33,8 @@ app.use((req, res, next) => {
 const productsData = fs.readFileSync('products.json');
 let products = JSON.parse(productsData);
 
+
+//get product by id 
 app.get('/products/:id', (req, res) => {
     const id = parseInt(req.params.id);
 
@@ -45,7 +47,7 @@ app.get('/products/:id', (req, res) => {
     res.json(product);
 })
 
-
+//add new product
 app.post('/admin', (req, res) => {
 
     const { name, price, description, size, season, material, color, imageURL } = req.body;
@@ -72,6 +74,7 @@ app.post('/admin', (req, res) => {
     res.json({ message: 'Товар успешно добавлен', product: newProduct });
 })
 
+//product delete
 app.post('/deleteProduct', (req, res) => {
     const id = req.body.id;
   
@@ -91,10 +94,8 @@ app.post('/deleteProduct', (req, res) => {
         return;
       }
   
-      // Filter the products array to exclude the item with the matching ID
       products = products.filter(product => product.id !== id);
   
-      // Write the updated data back to the file
       fs.writeFile('products.json', JSON.stringify(products), (err) => {
         if (err) {
           res.status(500).json({ error: 'Failed to update products.json' });
@@ -106,6 +107,8 @@ app.post('/deleteProduct', (req, res) => {
     });
   });
 
+
+//get all products
 app.get('/products', (req, res) => {
     const filePath = path.join(__dirname, 'products.json');
     res.sendFile(filePath); const fs = require('fs');
