@@ -1,0 +1,11 @@
+
+<div class="productsPageWrapper">
+    <div *ngFor="let product of products" >
+        <img src="{{product.imageURL}}" width="200">
+        <p>{{product.name}}</p>
+        <p>{{product.price}}</p>
+        <button (click)="goToProduct(product.id)">Переглянути</button>
+    </div>
+</div>
+
+

@@ -1,0 +1,20 @@
+<div class="productItemWrapper" *ngIf="product">
+    <span>&#10006;</span>
+    <div>
+        <img src="{{product.imageURL}}" width="200"> 
+    </div>
+   
+    <div> 
+        <p>{{product.name}}</p>
+        <p>{{product.color}}</p>
+        <p>{{product.price}}</p>
+    </div>
+    <div class="btn_wrapp">
+        <button>-</button>
+        <p>Кількість</p>
+        <button>+</button>
+    </div>
+    <div>
+        <button (click)="addToCart(product, 1)">Додати до кошика</button>
+    </div>
+</div>

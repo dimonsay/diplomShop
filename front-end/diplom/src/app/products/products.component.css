@@ -1,0 +1,13 @@
+.productsPageWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.productsPageWrapper div{
+  margin-left: 2rem;
+}
+img{
+    width: 300px;
+    height: 300px;
+}

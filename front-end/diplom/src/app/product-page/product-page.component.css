@@ -1,0 +1,14 @@
+
+.productItemWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 300px;
+}
+.btn_wrapp{
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
