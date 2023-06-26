@@ -1,14 +1,78 @@
 
 .productItemWrapper{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+.goBackBtn{
+    width: 6rem;
+    height: 2rem;
+    margin-left: 4rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color:black;
+}
+.productWrapp{
+    width: 800px;
+    height: 550px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+img{
+    width: 380px;
+    height: 500px;
+}
+.addBtnWrapp{
+    width: 50%;
+    height: 60%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
-img{
-    width: 300px;
+.price{
+    color: red;
 }
-.btn_wrapp{
-    width: 8rem;
+.quantityBtn_wrapp{
+    width: 7rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+} 
+.quantityBtn_wrapp button{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+   
+}
+.addToCart{
+    width: 12rem;
+    height: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color:black;
+}
+
+.aboutProdInfo{
+    width: 800px;
+    height: auto;
+    margin:0 auto;
+}
+h4{
+    margin: .6rem 0;
+}
+
+.aboutInfo{
+    font-weight: 300;
 }

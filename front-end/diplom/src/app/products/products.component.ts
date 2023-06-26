@@ -24,6 +24,7 @@ export class ProductsComponent {
       .then(response => response.json())
       .then(data => {
         this.products = data;
+        console.log(this.products);
       })
       .catch(error => {
         console.error('Ошибка при получении данных:', error);

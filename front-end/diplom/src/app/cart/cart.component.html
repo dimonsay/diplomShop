@@ -1,14 +1,27 @@
 <div>
     <div *ngIf="cart.length > 0">
-      <div *ngFor="let item of cart">
-        <div *ngFor="let product of [item.product]">
-          {{ product.name }}
+        <div class="row">
+            <h3>Корзина:</h3>
+            <div class="product-wrapper" *ngFor="let item of cart">
+                <div class="product col" *ngFor="let product of [item.product]">
+                    <img src={{product.imageURL}} alt="" srcset="">
+                    <span>
+                        {{product.name}}
+                    </span>
+                    <span>
+                        {{product.price * item.count}}
+                    </span>
+                    <div class="count">
+                        <button (click)="decreaseCount(item.product.id)">-</button>
+                        {{item.count}}
+                        <button (click)="increaseCount(item.product.id)">+</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        {{ item.count }}
-      </div>
     </div>
     <div *ngIf="cart.length === 0">
-      Загрузка данных...
+        Корзина пуста
     </div>
-  </div>
-  
+</div>

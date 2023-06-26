@@ -1,24 +1,134 @@
 [
     {
         "id": 1,
-        "name": "Product 1",
-        "price": 19.99,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "size": "M",
-        "season": "Spring",
-        "material": "Cotton",
-        "color": "Blue",
-        "imageURL": "data:image/jpeg;base64,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"
+        "name": "Костюм блуза та брюки палацо віскоза жатка лайм",
+        "price": 1590,
+        "description": "Цей костюм — ідеальний вибір для тих, хто хоче виглядати стильно й елегантно. Блуза з м'якої віскози з яскравим лаймовим відтінком створює яскравий образ, що запам'ятовується, а широкі штани-палаццо з жатої тканини надають легкості. Цей костюм підійде для будь-якого випадку — від офісу до вечірньої прогулянки. Почуватиметеся комфортно й упевнено, і оточуючі просто не зможуть відірвати від вас погляди. Цей костюм — прекрасний вибір для тих, хто цінує якість, стиль і унікальність.",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "віскоза",
+        "color": "зелений",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015728/015728-500x750.1.0.webp"
     },
     {
         "id": 2,
-        "name": "Product 2",
-        "price": 29.99,
-        "description": "Ut eu quam vitae ex maximus vehicula.",
-        "size": "L",
-        "season": "Summer",
-        "material": "Polyester",
-        "color": "Red",
-        "imageURL": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIAAgAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAgMEBQcBAAj/xAA8EAACAQMBBgMGAwYFBQAAAAABAgMABBEFBhIhMUFREyJxBxQyYYGhQpKxUmKRwdHhFSOy8PEWNFPS4v/EABoBAAIDAQEAAAAAAAAAAAAAAAMEAAECBQb/xAAoEQADAAICAQIGAgMAAAAAAAAAAQIDERIhBDHhBQYiMlGRE2EVQXH/2gAMAwEAAhEDEQA/AMbPCnYGGd5enMU2w4UgEg5FaKLfRtQbTtXtrtTkI43vmOtb5FILi1SWNgVZMg98184B975Gtr9m+oe/aDHG4y9ufDPp0+1LeRPow+Cu9F25ZBkrwFUm0aLNZF1PFSGBoj1I7kecj0JqjuNx4mXgc8s0n6DQEah5pgSPK6j6/Ohe9Tw5Ch55NGOoW24+4ea8sUMa3CUnST9oY+tOYa70L5462Qo0rRPZ5oyxQnU5l88oxED0XqfqftQRoti+palb2ikgSP5j2UcSf4VtVnbJBCkceFjQAKAOgrWatdA8U77Hwd2E551XvcKpJOAeZJqxmIC/P0ob2ku4oIiTwak6GpKvaa+VbSXdPmxWW3Uxkck0R6veNLE43ieHehZ+dN+Pj4oBnvb0ho1yumuUwLkgim2HGpBXIpt0NUiDca5YYrWvZHFP7ndsB5WkAX6DiazjQdIutXv47SzTekc8+ijua+gNntIh0LSYrKAfAvmY82PUmhZmtaCYk97IutWsjREiQ71CiXskMhiuBkA4zijHVJgI2zQNqp3pG4cOlJuVsbW9EfVD5hLGd7j9qp9Vtxc2fk+McQKmOzHynOBXmjPh4Fbn6dG+PJaZL9nOnbu/fPHl28qZ6D+9aPHEXGTy7UK7DDOlxg895v8AUaMYuw6Co3yptmFPFaQ0tsM8OAqt1uwjmgdHQMPSiBFAHeo9zEGDZHOo5MJ9mH7R6a9jIxAJiJ59qFpFw1bfrWki6WRGQMrDBBrKdf0eXTbkqyHwyfK38qYw5N9P1AZY09ooHry86VMMGkijgibT9nbyXdxHBCu9I7bqr3pijj2S6Yl9tHJNKoKW0JYZ/aJAH2zWKelstLbNB2H2ag0GwzuhriXBkk6n5DsKvZ5BkilXTeDwUcMdKpbq9HmcEZTnSjfY3M9EXW7pFjOT96Cru/VzgHrU7Wbye+ufdbRGllc4VV5mrGH2aah7qtxqWoxwk4zDCm+Vz3Y4FXGJ29l1ljGuwUa4XOBU87vuwPcVcTezsjDW2qsWHELNFwP1B/lVJq9veaSfd72LcyPI4OVf0P8ALnW8mC47aNYvLx29Sy/2MdY9MUk85H/1GiWO+QHBIyKBdlZLm5s4rezQu5yTxwF4niTRXFs/Mygz326/URpkD6n+lSMF32kCy+TEdNlxHfxnhkVIEySDGRih6XQ7uIZtr0OR+F13c/UVFi1K4s5vBvEaNx0bqO471q8Nx6oxjzRk+1hDImZDnkOdD+0WlQXcDI8YZSOoq1tb1blRu8eNO6hGfdy4GT2pd/lDCRgGv2PuWovCp3k5gn9KrsCiDbFSNXkqhp6HuU2JWtU0SxWp+xNB42qPjlHEPu/9KywVsPsYhCaNf3BHGSYKD8lX/wCjWL9C4+4KNoL0WyMedZtqWvEGTcyWlOAo79KMdq5/KeOPWsrdlOtoMKQ7qvH5mlolVTHW+MbNV9n+kCPcv7sBpea574/l+vpRzNMZleFADkYZjyX+9CulXklsUs5lEbKcK3TH++VXpnjgj4sFUV23i46SOB/LzbbK6SQxuyHmDg1W61aW+rafLZ3Qyrjyt1RujD0p/UbuOWcyRE4I45GONV73HzplY1S7Quqc1tHNm9Oi0PSobRWDygAyyY+Nv6dBVsJxVP7x86djnz1q1iUrSLqnT2y1EmagaxZR6hZtGww4BKOOamlxyZpU0mImPyrNY1S0ypyOHyQNbMTyxXHgtvMrMfi/AaNnUPBjuKCrN1j1KYYICyE8BRYsx8EYDDh1rz2SVNNHpIp3Kox/2h2gh1TeH4hQeVo+9pXmu4n+VAbcTwo2F/QhbL9wpTxrb/ZI8P8A0oFjcF/GcyDPwnPD7YrDwONFmwW0EuhaxEGfNpOwSZDyHZvUfpmrtbRUPTD7bSK4Kv4UgXHQrmsvMb+8s7AeKpBBHQjlWy7URh7bx0GQQaya4ieS7kWJt1x8uFAxtptD1JOEzVbO5h1LTY7tzjxFDDup7fxzSfendQsrk7owvpQr7ONVt5bo6PqYdVmbMDZwFk6ofXp8/WtM/wAAsD+GT89M5fjvj+IlOZPf9L3OHl+HZatuNaBaWQ1DeQ5ozOz9h1WT89NnZzTjzSX89CXzX4H4r9e5F8Mzr8AeHOakRPRQNm9O/Yl/OaWuz2njksn560/mnwPxX69zf+Nzf0UMT8OdcnlAjLucIgJJ+VEq6DZdFk/PQvtatrHPHpVjvGU4e4O9ndXovqefp60TD8weLnrhiT3/AM9wb+HZU/qa0Vmjo01wZG/GxY0QapeRWFi0krboAqBo8IiuVjIABU/rQr7StRbfFsHO7nG6O3WlHu6O0kokD9rNZOq3+8pPhqMCqGlyHLE0mmpnitISp8nsfQinU55qMKdR+lWQ2fTNXj1LYu2Mkm/Mkfhvx4ll4ffn9aFYNIniSe8uY2TfJ3VI449KpdjdbOia1DcSbzWzZSZBx8p6gdxgVtd5YWt9aLJEsbxyLvKVAIII55pTIql7Q9gyTxUsx60tQ1zOuSpwJFYcCK0/YjatdTQabqMgGoxDCseHvCjqP3u4+voH6/p3uUouIFCsh4gfiHUVXXFg6mHUrByCpEiFTgj0pbyMUeRGqCVGvQ3DFc3aFtj9rotWiitr51jvSMKx4CXH6N8v4dqLcV5PyfFrBkctFKuhvdpSrS92qHajaWDREW3hCzajKP8AKgzwX95uw/X7isPj1krjK2yOhzaXXE0a23Yt17yUf5UZ6fvH5D7/AKB+gWrzPJdXLF5ZZCXduJao6pPcTvdXrmW4mbiT36AdhRRBBHaWqrkAqK9V4niz40aXr/tg+2D+01//AIZCJom3Jk4rnkayzaHVpdWulnlUIcYwpyKJdvtUE1yLdDy+Kghxlq6GGetsFnvvihvGaSVpxyFFNg7xo4uKror1JJqEHklKEYNaf7M9rgoXRb+TCN/27k8j1X+n/FZR1pyKV4pFeNirA5BHSs1O0XNaez6B1jTI5W3wuQePegu7STTLv3ZwPdZmwp/8ZqTsnt/BPBHaa03hyDCiY/C3r2qbtk1sbJpC6bmM72aTqHLOliyK1oH77SprF2uUUyRMcsF5g9xRbspt0oCWmtTDw+Ud436P/wC38e9csPCvNnLeTxY5CYwGKsDxx3oBvxHa3kg3lEZzvDPKsZMMZlwtEcprZquubYRKGtdEdLifJVpx5o4++P2j9h9MULafZO9093duZZXPFnOST1NTtm9IiOj2TIAN6JSMfMZp7VlWwjL4wFFYx4YwTqEYmOT7HrNfFLStEBHEcKR1b+1Q9pNTjtdPkfeAIXgKuLOe2Og29xGysHiDZB6nn96yDbLWxdX728LZjQ4Yg9e1FmHVaJVTMtlTdTNcSPNI2Wc5NQ2J6U4G3hw5V7Ap1dHPb32RGBJ40uJcGlMONKjFaIcK45023Opxh3gDvLx7nFMSQEH40/NUIR69XOuK7VlDkbletJmupnO40sjRryUsSB9KSeVMnnUSITrHVb2wV1srqSJH+JFPlP0psXMs8/iTSFn7molOw8WqNIvb1oNtnNtbzR/ChkPvFqgICHmoPY13a7bFtZi8O3Ro0PxZ6/KhPHCkFaF/HO9m1kpLWx+LWdSgtjaQ300duc5jDcOPPHb6VXsa9IMNSCc0ZJeoNtjsUpHCnd84qKvOpMakiqZZwZJp0cBXgmK6RWSH/9k="
+        "name": "Спідниця з накладними кишенями котон молочна",
+        "price": 714,
+        "description": "Якщо ставите перед собою мету створити водночас комфортний і стильний образ, то однозначно варто звернути увагу на цю спідницю. Її молочно-білий колір надає образу ніжності та свіжості, а накладні кишені роблять її не тільки модною, а й зручною у використанні. У них завжди можна зберігати необхідні дрібниці, що особливо актуально в повсякденному житті. Спідниця виготовлена з якісного котону, який приємний до тіла і забезпечує комфорт під час носіння. Її дизайн вирізняється лаконічністю та елегантністю. Спідниця облягає фігуру і підкреслює її красу, але при цьому не сковує рухів завдяки своїй еластичності. Це універсальний елемент гардероба, який дасть тобі змогу мати стильний і оригінальний вигляд у будь-якій ситуації.",
+        "size": 36,
+        "season": "весна-літо",
+        "material": "котон",
+        "color": "білий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/014935/014935-500x750.1.0.webp"
+    },
+    {
+        "id": 3,
+        "name": "Сукня міні шифон квіти на бежевому",
+        "price": 1390,
+        "description": "Сукня-міні з об'ємними рукавами з шифону — це ідеальний вибір для тих, хто хоче виглядати модно й елегантно. Виготовлена в ніжному бежевому кольорі, який чудово підійде для будь-якого приводу. Об'ємні рукави з квітковим принтом надають сукні особливої родзинки й роблять її неповторною. Шифон — легкий і приємний до тіла матеріал, який забезпечує комфорт і свободу рухів. Ця сукня підкреслить жіночність і створить незабутній образ. Ідеально поєднується з туфлями на підборах або босоніжками, а також з аксесуарами в стилі boho. Не пропустіть можливість мати чудовий вигляд у цій сукні!",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "шифон",
+        "color": "принти і візерунки бежевий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/012465/012465-500x750.1.0.webp"
+    },
+    {
+        "id": 4,
+        "name": "Костюм куртка та брюки із плащової тканини чорний",
+        "price": 1614,
+        "description": "Цей костюм — справжній маст-хев для модниць, які шукають стильний та елегантний образ для будь-якої ситуації. Виготовлеий високоякісної плащової тканини, яка надає йому особливої привабливості та унікальності. Чорний колір костюма створює строгий і елегантний образ, який підійде як для офісних зустрічей, так і для вечірніх заходів. Куртка має класичний крій, який підкреслить фігуру і додасть їй стрункості. Штани ж забезпечують комфорт і свободу рухів. Тканина, з якої виготовлений цей костюм, має приємну на дотик текстуру та захистить від негоди. Крім того, він легко поєднується з іншими елементами гардероба, що дає змогу створювати різноманітні образи.",
+        "size": 42,
+        "season": "весна-літо",
+        "material": "плащова тканина",
+        "color": "чорний",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015411/015411-500x750.1.0.webp"
+    },
+    {
+        "id": 5,
+        "name": "Костюм блуза та брюки палацо жатка бузковий",
+        "price": 1690,
+        "description": "Костюм з блузи та штанів-палаццо ніжного бузкового відтінку — це елегантний і стильний комплект для жінок, які хочуть виглядати модно і впевнено. Блуза на запах з V-подібним вирізом, який красиво підкреслює зону декольте. Модель доповнена поясом, що підкреслює лінію талії.  Штани-палаццо мають широкі штанини і високу посадку, що створює ефектні лінії. Комплект пошитий з тканини жатка, яка легка і дуже приємна на дотик. Бузковий колір костюма підкреслює його вишуканий стиль і додає нотки ніжності та романтики в образ. Його дизайн простий, але вишуканий, тому в ньому почуватиметеся комфортно й водночас приємно вражатимете всіх красивим зовнішнім виглядом.",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "віскоза",
+        "color": "фіолетовий",
+        "imageURL": "https://vovk.com/image/catalog/i/015596/015596.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Рожевий сарафан міні з фігурним вирізом із льону",
+        "price": 1290,
+        "description": "Рожевий сарафан міні з льону з фігурним вирізом поєднує в собі жіночність і легкість, що робить його ідеальним вибором для спекотного літнього дня. Виріз надає сарафану родзинки, а рожевий колір додає йому ніжності та романтичності. Матеріал сарафана — льон, який не тільки приємний на дотик, а й відмінно дихає, що дає змогу зберігати комфортну температуру тіла в спекотну погоду. Силует сарафана міні підкреслює жіночні форми, а простота і лаконічність дизайну дають змогу доповнювати його різними аксесуарами. Рожевий сарафан міні з фігурним вирізом з льону — це унікальне й оригінальне рішення для тих, хто цінує красу та комфорт в одязі.",
+        "size": 36,
+        "season": "весна-літо",
+        "material": "льон",
+        "color": "рожевий",
+        "imageURL": "https://vovk.com/image/catalog/i/013254/013254.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Костюм жакет оверсайз та брюки палацо рожевий",
+        "price": 2490,
+        "description": "Розкішність і елегантність поєднані в цьому унікальному ніжно-рожевому костюмі з еко льону. Жакет у стилі оверсайз привносить невимушену шикову нотку у ваш образ, даючи змогу виділитися з натовпу. Його вільний крій надає відчуття свободи й легкості, а еко льон забезпечує високу міцність і екологічність. Штани-палаццо додають жіночності та вишуканості. Вони підкреслять вашу індивідуальність і надають силуету витонченості. Ніжно-рожевий колір створює неповторну романтичність і освіжає образ. Носіть цей костюм на важливих заходах, побаченнях або ділових зустрічах, щоб привернути захоплені погляди й показати свою витонченість. Станьте іконою стилю з цим оригінальним і прекрасним костюмом з еко льону в ніжно-рожевому відтінку.",
+        "size": 40,
+        "season": "весна-літо",
+        "material": "еко лен",
+        "color": "рожевий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015497/015497-500x750.1.0.webp"
+    },
+    {
+        "id": 8,
+        "name": "Сукня міні софт молочні квіти на жовтому",
+        "price": 1590,
+        "description": "Ця сукня з софтової тканини створить легкий і повітряний образ, який підкреслює жіночність і красу кожної дівчини. Молочні квіти на жовтому тлі надають сукні ніжності та романтичності, а також роблять її універсальною для будь-якого випадку — від романтичного побачення до вечірки з друзями. Крім того, це вбрання чудово підходить для літнього сезону для тих, хто хоче почуватися вільно та комфортно. Не пропустіть можливість мати привабливий та елегантний вигляд у цій прекрасній сукні!",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "софт",
+        "color": "принти та візерунки жовтий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015540/015540_2-500x750.1.0.webp"
+    },
+    {
+        "id": 9,
+        "name": "Костюм блуза з коротким рукавом та брюки палацо віскоза жатка помаранчевий",
+        "price": 1590,
+        "description": "Цей костюм — справжній хіт сезону. Виготовлений з легкої та приємної на дотик віскози, ідеально підійде для спекотної погоди. Яскравий помаранчевий колір надає образу енергії та життєрадісності. Блуза з коротким рукавом підкреслює красу і грацію рук, а штани створюють ефект довгих ніг і роблять фігуру стрункою. Костюм чудово поєднується з легкими туфлями на підборах або босоніжками. Підходить для роботи, прогулянок або зустрічей із друзями. Цей костюм стане невіддільною частиною гардероба кожної стильної жінки, яка цінує комфорт і красу. Будьте впевнені, ви привертатимете увагу оточення й почуватиметеся неповторно. ",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "віскоза",
+        "color": "помаранчевий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015600/015600_0-500x750.1.0.webp"
+    },
+    {
+        "id": 10,
+        "name": "Сарафан щільний штапель ванільний дрібноцвіт на фоні фуксія",
+        "price": 1790,
+        "description": "Сарафан на зав'язках — однозначно вигідне придбання на літо. Перед вами модель з легкої тканини, в якій буде комфортно навіть у спекотний літній день. Модель на зав'язках, тож за її допомогою красиво акцентуєте плечі, а також зможете чітко відрегулювати розмір сарафана за своїми параметрами. Сарафан має цікаві акценти в зоні декольте та на талії, чим одразу привертає до себе увагу. Яскравий колір та помітний принт також дають змогу мати неповторний та привабливий вигляд. Цей сарафан підійде для будь-якого випадку — від повсякденних прогулянок до урочистих заходів.",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "щільний штапель",
+        "color": "принти і візерунки рожевий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015887/015887-500x750.1.0.webp"
+    },
+    {
+        "id": 11,
+        "name": "Брюки прямі із льону авторський принт на помаранчевому",
+        "price": 1390,
+        "description": "Прямі брюки з льону з авторським принтом на помаранчевому тлі — оригінальний та унікальний виріб, що приверне увагу своєю незвичністю і стилем. Штани пошиті з якісного лляного матеріалу, який забезпечує комфорт і легкість у носінні. Принт на брюках виконаний в авторському стилі, що робить їх ексклюзивними і неповторними. Прямий крій штанів підкреслює фігуру і створює елегантний образ. Помаранчевий колір надає штанам яскравості та оригінальності, що дає змогу поєднувати їх з різними елементами гардероба. Ідеально підходять для створення стильних образів на кожен день або для особливих випадків.",
+        "size": 40,
+        "season": "весна-літо",
+        "material": "льон",
+        "color": " принти і візерунки помаранчевий",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/015625/015625-500x750.1.0.webp"
+    },
+    {
+        "id": 12,
+        "name": "Лляна міді сукня чорна",
+        "price": 1790,
+        "description": "Ця лляна міді-сукня чорного кольору — ідеальний вибір для тих, хто цінує комфорт, стиль і якість. Легкий і приємний на дотик матеріал забезпечує комфорт у будь-яку погоду, а чорний колір дозволяє створювати безліч різноманітних образів. Висока талія підкреслює фігуру і робить силует стрункішим, а довжина до середини литки надає сукні вишуканості та жіночності. Лляна тканина вирізняється високою міцністю та довговічністю, а також чудово вбирає вологу, що робить цю сукню ідеальним вибором для літнього гардероба. Чорний колір цієї сукні легко поєднується з різними аксесуарами та взуттям, що дає змогу створювати безліч стильних образів для будь-яких випадків — від повсякденних прогулянок до ділових зустрічей.",
+        "size": 38,
+        "season": "весна-літо",
+        "material": "льон",
+        "color": "чорний",
+        "imageURL": "https://vovk.com/image/cachewebp/catalog/i/014946/014946-500x750.1.0.webp"
     }
 ]

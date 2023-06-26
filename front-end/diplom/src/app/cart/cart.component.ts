@@ -20,11 +20,19 @@ export class CartComponent implements OnInit {
     this.cartService.getCart().subscribe(
       data => {
         this.cart = data;
-        console.log(data);
       },
       error => {
         console.error('Ошибка при получении данных:', error);
       }
     );
+  }
+
+  increaseCount(productId: number, count: number = 1) {
+    this.cartService.countChange(productId, count)
+    this.getCart();
+  }
+  decreaseCount(productId: number, count: number = -1) {
+    this.cartService.countChange(productId, count)
+    this.getCart();
   }
 }

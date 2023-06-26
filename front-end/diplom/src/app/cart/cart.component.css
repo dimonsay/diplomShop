@@ -1,0 +1,17 @@
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-wrapper{
+    width: 20vw;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+.product-wrapper *{
+    margin: 5px 0;
+}

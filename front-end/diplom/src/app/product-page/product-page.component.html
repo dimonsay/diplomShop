@@ -1,20 +1,34 @@
 <div class="productItemWrapper" *ngIf="product">
-    <span>&#10006;</span>
-    <div>
-        <img src="{{product.imageURL}}" width="200"> 
+    <button class="goBackBtn">Назад</button>
+    <div class="productWrapp">
+        <div class="imgWrapp">
+            <img src="{{product.imageURL}}" width="200"> 
+        </div>
+        <div class="addBtnWrapp">  
+            <p>{{product.name}}</p>
+            <p>{{product.color}}</p>
+            <p class="price">{{product.price}}</p>
+
+            <div class="quantityBtn_wrapp">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+            </div>
+
+            <div>
+                <button class="addToCart" (click)="addToCart(product.id)">Додати до кошика</button>
+            </div>
+        </div>
     </div>
+
+    <div class="aboutProdInfo">
+        <div class="aboutInfo">
+            <h4>Про товар</h4>
+            <p>{{product.description}}</p>
+        </div>
+        
+
+    </div>
+
    
-    <div> 
-        <p>{{product.name}}</p>
-        <p>{{product.color}}</p>
-        <p>{{product.price}}</p>
-    </div>
-    <div class="btn_wrapp">
-        <button>-</button>
-        <p>Кількість</p>
-        <button>+</button>
-    </div>
-    <div>
-        <button (click)="addToCart(product, 1)">Додати до кошика</button>
-    </div>
 </div>

@@ -2,12 +2,34 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
-.productsPageWrapper div{
+.productWrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 320px;
+  height:550px;
   margin-left: 2rem;
+  border: 1px solid gray;
 }
 img{
-    width: 300px;
-    height: 300px;
+  margin-top: 1rem;
+  width:80%;
+  height: 350px;
+}
+.price{
+  color: red;
+}
+.goToProdBtn{
+  width: 80%;
+  height: 2rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color:black;
+
 }

@@ -105,30 +105,13 @@ app.post('/deleteProduct', (req, res) => {
   });
 });
 
-//get cart
-app.get('/cart', (req, res) => {
-  const filePath = path.join(__dirname, 'cart.json');
-  res.sendFile(filePath); 
-});
-
-
 //add product to cart 
-app.post('/addToCart', (req, res) => {
+app.post('/addToCart', async (req, res) => {
   const { product } = req.body;
 
-  fs.readFile('cart.json', 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading cart.json:', err);
-      return res.status(500).json({ error: 'Internal server error' });
-    }
-
-    let cartItems;
-    try {
-      cartItems = JSON.parse(data);
-    } catch (error) {
-      console.error('Error parsing cart.json:', error);
-      return res.status(500).json({ error: 'Internal server error' });
-    }
+  try {
+    const cartData = await fs.promises.readFile('cart.json', 'utf8');
+    let cartItems = JSON.parse(cartData);
 
     if (!Array.isArray(cartItems)) {
       cartItems = []; // Если cartItems не является массивом, инициализируем его как пустой массив
@@ -142,13 +125,63 @@ app.post('/addToCart', (req, res) => {
       cartItems.push(newProduct); // Добавляем новый товар в корзину со значением count равным 1
     }
 
-    fs.writeFile('cart.json', JSON.stringify(cartItems), 'utf8', err => {
-      if (err) {
-        console.error('Error writing to cart.json:', err);
-        return res.status(500).json({ error: 'Internal server error' });
-      }
+    await fs.promises.writeFile('cart.json', JSON.stringify(cartItems), 'utf8');
+    res.status(200).json({ message: 'Product added to cart' });
+  } catch (error) {
+    console.error('Error manipulating cart data:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
-      return res.status(200).json({ message: 'Product added to cart' });
+
+//get cart
+app.get('/cart', async (req, res) => {
+  try {
+    const filePath = path.join(__dirname, 'cart.json');
+    const cartData = await fs.promises.readFile(filePath, 'utf8');
+    const cartItems = JSON.parse(cartData);
+    res.json(cartItems);
+  } catch (error) {
+    console.error('Error reading cart data:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+app.post('/changeCountInCart', (req, res) => {
+  const { productId, count } = req.body;
+
+  fs.readFile('cart.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: 'Failed to read cart data' });
+    }
+
+    let cart;
+
+    try {
+      cart = JSON.parse(data);
+    } catch (err) {
+      console.error(err);
+      return res.status(500).json({ error: 'Failed to parse cart data' });
+    }
+
+    // Find the product in the cart
+    const product = cart.find((item) => item.product.id === productId);
+
+    if (product) {
+      // Update the count of the existing product
+      console.log(product.count)
+      product.count += count;
+      
+    }
+
+    // Write the updated cart data back to the file
+    fs.writeFile('cart.json', JSON.stringify(cart), 'utf8', (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Failed to write cart data' });
+      }
+      res.status(200).json({ message: 'Count in cart updated successfully' });
     });
   });
 });
